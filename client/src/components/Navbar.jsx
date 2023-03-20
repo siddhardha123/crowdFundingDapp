@@ -3,9 +3,10 @@ import { ConnectWallet } from '@thirdweb-dev/react';
 import { useStateContext } from "../context/stateContext";
 
 const navlinks = [
-  { name: "Home", href: "#" },
-  { name: "Profile", href: "#" },
-  { name: "Campaigns", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Profile", href: "/Profile" },
+  { name: "Campaigns", href: "/create-campaign" },
+
 ];
 
 function Navbar() {
@@ -16,7 +17,7 @@ function Navbar() {
     <nav className="bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center md:space-x-96">
+          <div className="flex items-center md:space-x-64">
             <div className="flex-shrink-0">
               <img
                 className="h-8 w-8"

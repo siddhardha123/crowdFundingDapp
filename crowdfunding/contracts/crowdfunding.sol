@@ -38,7 +38,6 @@ contract crowdfunding {
         campaign.amountCollected = 0;
         campaign.image = _image;
         numberOfCampaigns++;
-
         return numberOfCampaigns - 1;
     }
 
